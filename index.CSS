@@ -1,14 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, 'segoe', 'Roboto', 'fielvetica neve',sans-serif;
-    background: #fff4;
-    text-decoration: nome;
+body{
+  margin: 0;
 }
 
-.navbar {
-    display: flex;
-    
-    justify-content: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 117px;
+  height: 72px;
+  border-radius: 50%;
+  margin-left: 48%;
+}
+
+.nav-links {
+  width: 100%;
+  height: 90px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 35px;
+  margin-left: 48%;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+ }
+
+.links a {
+  text-decoration: none;
+ }
+
+.banner{
+  position: relative;
+  width: 150% ;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.banner img {
+  width: 100%; height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-sobreposto{
+  color: rgb(228, 72, 72);
+  font-family: cursive;
+  box-shadow: 0px, 4px, 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+}
+
+.frase-receita h1{
+  display: flex;
+  justify-content: center;
+  color: darkred;
+  width: 700px;
+  margin: auto;
+  font-size: 30px;
+  font-family: cursive;
+  margin-bottom: 15px;
+}
+
+.estrofe-receita p{
+display: contents;
+color: gray;
+font-size: 20px;
+width: 800px;
+margin:  auto;
+font-family: monospace;
+margin-bottom: 100px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px; 
+max-width: 1100px;
+margin: 0 auto;
+}
+
+
+.card {
+background-color: #ffffff;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border-radius: 4px;
+overflow: hidden; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+display: flex;
+flex-direction: column;
+}
+
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+
+.card-content {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 20px;
+flex-grow: 1;
+}
+
+.card-content h3 {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0 0 10px 0;
+font-size: 1.15rem;
+color: #222222;
+}
+
+
+.card-content p {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0 0 20px 0;
+font-size: 0.9rem;
+color: #666666;
+line-height: 1.4;
+}
+
+
+.btn-receita {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: inline-block;
+background-color: #8B0000;
+color: #ffffff;
+text-decoration: none;
+padding: 8px 16px;
+border-radius: 4px;
+font-size: 0.85rem;
+font-weight: bold;
+text-align: center;
+transition: background 0.2s ease;
+}
+
+.btn-receita:hover {
+background-color: #a30000;
 }
